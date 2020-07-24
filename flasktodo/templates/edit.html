@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}Login | My To-Dos{% endblock %}
+
+{% block header %}
+  <h1>Edit Items</h1>
+  <nav>
+    <ul>
+      <li><a href="{{ url_for('todos.index') }}">Home</a></li>
+    </ul>
+  </nav>
+{% endblock %}
+
+{% block content %}
+
+  <form method="post" action="{{ url_for('todos.submit') }}">
+    <ul>
+      {% for todo in todos %}
+      <li><input type="text" name="{{ todo['id'] }}" value="{{ todo['description'] }}"/></li>
+      {% endfor %}
+    </ul>
+    <input type="submit" value="Save">
+  </form>
+
+{% endblock %}
