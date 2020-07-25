@@ -6,7 +6,7 @@
 
 {% block content %}
     <header class="header">
-      <h1>ImNext</h1>
+      <h1>To-Do App</h1>
       {% if g.user %}
         <form class="new-todo" method="post" action='/add'>
           <input class="new-todo" type="text" id='add' name='add' placeholder="What needs to be done?" required>
@@ -32,8 +32,7 @@
     </section>
     {% else %}
     <section class="intro">
-      <p>ImNext is a simple To-Do application to help you stay organized and manage your day-to-day.
-        You can use this app to make shopping lists or task lists so that you can increase your productivity and focus on what matters to you.</p>
+      <p>To Do List App is a simple To-Do application to help you stay organized and manage your day-to-day. You can use this app to make shopping lists or task lists so that you can increase your productivity and focus on what matters to you.</p>
     </section>
     {% endif %}
 
