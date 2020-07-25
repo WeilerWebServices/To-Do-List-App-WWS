@@ -8,19 +8,17 @@
     <!-- @media Breakpoints -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Search Engines Algorithms -->
-    <meta name="author" content="Julio Pochet Edmead & Nathan Weiler">
-    <meta name="description" content="Flask To-Do App for the class CSET-160: Web Development II "/>
+    <meta name="author" content="Weiler Web Services">
+    <meta name="description" content="To-Do-List-App-WWS is a simple To-Do application to help you stay organized and manage your day-to-day. You can use this app to make shopping lists or task lists so that you can increase your productivity and focus on what matters to you. Made by Weiler Web Services and code is copyrighted and not offering any licenses."/>
     <!-- Favicon -->
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon_io-1/favicon.ico') }}" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='favicon_io-1/apple-touch-icon.png') }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='favicon_io-1/favicon-32x32.png') }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='favicon_io-1/favicon-16x16.png') }}">
     <link rel="manifest" href="{{ url_for('static', filename='favicon_io-1/site.webmanifest') }}">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
     <!-- CSS stylesheet -->
     <link rel="stylesheet" href="{{ url_for("static", filename="style.css") }}">
-    <title>ImNext - {% block title %}{% endblock %}</title>
+    <title>To Do List - {% block title %}{% endblock %}</title>
     </head>
   <body>
 
@@ -41,7 +39,7 @@
     {% block content %}
     {% endblock %}
     <footer class="footer">
-      <marquee><span>&#169; Copyright <time datetime='2020-03-31 22:05-0800'>2020</time>&nbsp;by Julio Pochet Edmead &amp; Nathan Weiler. All rights reserved.</span></marquee>
+      <marquee><span>&#169; Copyright <time datetime='07-25-2020'>2020</time>&nbsp;by Weiler Web Services All rights reserved.</span></marquee>
     </footer>
     </section>
   </body>
