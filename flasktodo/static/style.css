@@ -18,9 +18,10 @@ body {
 	color: black;
 	display: flex;
 	flex-direction: column;
-	font-family: 'Patrick Hand', cursive;
+        overflow: auto;
+	font-family: 'Times New Roman", Times, serif;
 	justify-content: center;
-	line-height: 2em;
+	line-height: 1em;
 	margin: 0 auto;
 	max-width: 620px;
 	min-height: 100vh;
@@ -31,6 +32,7 @@ body {
 .intro {
 	background-color: rgb(82, 80, 79);
 	color: white;
+        overflow: auto;
 	border-radius: 2rem;
 	padding: 2rem;
 	margin: 2rem;
@@ -38,6 +40,7 @@ body {
 
 .top {
 	align-items: center;
+        overflow: auto;
 	background-color: rgb(0, 238, 255);
 	display: flex;
 	flex-direction: row;
@@ -53,6 +56,7 @@ body {
 .top a {
 	align-items: center;
 	display: flex;
+        overflow: auto;
 	flex-direction: row;
 	justify-content: center;
 	width: 99%;
@@ -60,6 +64,7 @@ body {
 
 .top ul {
 	background: transparent;
+        overflow: auto;
 	cursor: pointer;
 	font-size: 15px;
 	list-style: none;
@@ -67,9 +72,10 @@ body {
 }
 
 .top a {
-	border: 3px solid hsl(103, 89%, 46%);
+	border: 1rem inset hsl(103, 89%, 46%);
 	color: white;
 	text-decoration: none;
+        overflow: auto;
 }
 
 .top a:hover {
@@ -81,12 +87,14 @@ body {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+        overflow: auto;
 }
 
 .todoapp {
 	background: rgb(0, 238, 255);
-	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3),
-							0 25px 50px 0 rgba(0, 0, 0, 4);
+	box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.3),
+        overflow: auto;
+	0 1.65rem 3.125rem 0 rgba(0, 0, 0, 4);
 	margin: 8rem 0 2.5rem 0;
 	position: relative;
 }
@@ -96,14 +104,16 @@ body {
 	font-size: 6rem;
 	position: absolute;
 	text-align: center;
-	top: -12rem;
+	top: -15rem;
 	width: 100%;
+        overflow: auto;
 }
 
 .new-todo {
 	background: hsl(103, 89%, 46%);
 	border: 1rem outset#999;
 	outline: 1rem ridge gold;
+        overflow: auto;
 	box-sizing: border-box;
 	color: rgb(0, 238, 255);
 	font-family: inherit;
@@ -111,13 +121,13 @@ body {
 	font-weight: inherit;
 	line-height: 1.4em;
 	margin: 0;
-	padding: 16px 16px 16px 60px;
+	padding: 2rem 2rem 2rem 3.75rem;
 	position: relative;
 	width: 100%;
 }
 
 .main {
-	border: 1rem outset#999;
+	border: 1rem outset #999;
 	outline: 1rem ridge gold;
 	position: relative;
 }
@@ -126,11 +136,14 @@ body {
 	list-style: none;
 	margin: 0 2rem;
 	padding: 0;
+	border: 1rem outset #999;
+	outline: 1rem groove gold;
 }
 
 .todo-list li {
 	border: 1rem groove #ededed;
 	position: relative;
+        overflow: auto;
 }
 
 .todo-list li:last-child {
@@ -147,6 +160,7 @@ body {
 	color: white;
 	cursor: pointer;
 	display: flex;
+        overflow: auto;
 	font-size: 2rem;
 	justify-content: center;
 	margin-bottom: 100px;
@@ -155,20 +169,21 @@ body {
 .footer {
 	align-items: center;
 	display: flex;
-	font-size: 2rem;
+	font-size: 1rem;
+        overflow: auto;
 	justify-content: center;
 	text-align: center;
 }
 
 .footer:before {
 	bottom: 0;
-	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3),
-	            0 8px 0 -3px gold,
-	            0 9px 1px -3px rgba(0, 0, 0, 0.3),
-	            0 16px 0 -6px gold,
-	            0 17px 2px -6px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.3),
+	            0 1rem 0 -0.5rem gold,
+	            0 1.25rem 0.25rem -0.5rem rgba(0, 0, 0, 0.3),
+	            0 2rem 0 -1rem gold,
+	            0 2rem 0.5rem -1rem rgba(0, 0, 0, 0.3);
 	content: '';
-	height: 50px;
+	height: 3.125rem;
 	left: 0;
 	overflow: hidden;
 	position: absolute;
